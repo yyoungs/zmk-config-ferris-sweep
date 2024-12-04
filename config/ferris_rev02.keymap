@@ -34,19 +34,19 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W       &kp E           &kp R        &kp T            &kp Y      &kp U        &kp I            &kp O       &kp P
-&hm LEFT_CONTROL A  &hm LALT S  &hm LEFT_GUI D  &hm LSHFT F  &kp G            &kp H      &hm RSHFT J  &hm RIGHT_GUI K  &hm LALT L  &hm RIGHT_CONTROL APOSTROPHE
-&kp Z               &kp X       &kp C           &kp V        &kp B            &kp N      &kp M        &kp COMMA        &kp DOT     &kp FSLH
-                                                &lt 1 TAB    &kp BACKSPACE    &kp SPACE  &kp ENTER
+&kp Q               &kp W       &kp E           &kp R        &kp T              &kp Y        &kp U        &kp I            &kp O       &kp P
+&hm LEFT_CONTROL A  &hm LALT S  &hm LEFT_GUI D  &hm LSHFT F  &lt 6 G            &lt 5 H      &hm RSHFT J  &hm RIGHT_GUI K  &hm LALT L  &hm RIGHT_CONTROL APOSTROPHE
+&kp Z               &kp X       &kp C           &kp V        &kp B              &kp N        &kp M        &kp COMMA        &kp DOT     &kp FSLH
+                                                &lt 3 TAB    &lt 1 BACKSPACE    &lt 4 SPACE  &lt 2 ENTER
             >;
         };
 
         nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &kp PAGE_UP    &kp UP    &trans     &kp DELETE
-&trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT       &kp DOWN  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &kp PAGE_DOWN  &trans    &trans     &trans
-                        &trans  &trans    &trans  &reset
+&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &trans              &kp PAGE_UP    &kp UP    &trans     &kp DELETE
+&trans     &trans     &trans     &trans     &trans           &kp RG(LEFT_ARROW)  &kp LEFT       &kp DOWN  &kp RIGHT  &kp RG(RIGHT_ARROW)
+&trans     &trans     &trans     &trans     &trans           &trans              &kp PAGE_DOWN  &trans    &trans     &trans
+                                 &trans     &trans           &trans              &trans
             >;
         };
 
@@ -79,10 +79,19 @@
 
         left_symbols {
             bindings = <
-&kp EXCLAMATION       &kp DOUBLE_QUOTES  &kp HASH           &kp DOLLAR            &kp PERCENT              &trans  &trans  &trans  &trans  &trans
-&kp PIPE              &kp LESS_THAN      &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans  &trans  &trans  &trans
-&kp NON_US_BACKSLASH  &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans  &trans  &trans  &trans  &trans
-                                                            &trans                &trans                   &trans  &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH           &kp DOLLAR            &kp PERCENT              &trans  &trans  &trans  &trans  &trans
+&kp RS(NUBS)     &kp LESS_THAN      &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans  &trans  &trans  &trans
+&kp NUBS         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans  &trans  &trans  &trans  &trans
+                                                       &trans                &trans                   &trans  &trans
+            >;
+        };
+
+        right_symbols {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp TILDE  &kp NON_US_HASH
+&trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp EQUAL      &trans        &kp GRAVE  &kp RS(SEMICOLON)
+&trans  &trans  &trans  &trans  &trans    &kp UNDER  &kp PLUS       &trans        &trans     &kp SEMICOLON
+                        &trans  &trans    &trans     &trans
             >;
         };
     };

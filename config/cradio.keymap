@@ -7,6 +7,7 @@
 #undef ZMK_BEHAVIORS_KEEP_ALL
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define NAV_L 1
@@ -72,35 +73,35 @@
             bindings = <
 &kp ESC   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &kp CAPS  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
                           &trans  &trans    &trans  &trans
             >;
         };
 
-//         left_symbols {
-//             bindings = <
-// &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH           &kp DOLLAR            &kp PERCENT              &trans  &trans  &trans  &trans  &trans
-// &kp RS(NUBS)     &kp LESS_THAN      &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans  &trans  &trans  &trans
-// &kp NUBS         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans  &trans  &trans  &trans  &trans
-//                                                        &trans                &trans                   &trans  &trans
-//             >;
-//         };
-// 
-//         right_symbols {
-//             bindings = <
-// &trans  &trans  &trans  &trans  &trans    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp TILDE  &kp NON_US_HASH
-// &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp EQUAL      &trans        &kp GRAVE  &kp RS(SEMICOLON)
-// &trans  &trans  &trans  &trans  &trans    &kp UNDER  &kp PLUS       &trans        &trans     &kp SEMICOLON
-//                         &trans  &trans    &trans     &trans
-//             >;
-//         };
+        //         left_symbols {
+        //             bindings = <
+        // &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH           &kp DOLLAR            &kp PERCENT              &trans  &trans  &trans  &trans  &trans
+        // &kp RS(NUBS)     &kp LESS_THAN      &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans  &trans  &trans  &trans
+        // &kp NUBS         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans  &trans  &trans  &trans  &trans
+        //                                                        &trans                &trans                   &trans  &trans
+        //             >;
+        //         };
+        // 
+        //         right_symbols {
+        //             bindings = <
+        // &trans  &trans  &trans  &trans  &trans    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp TILDE  &kp NON_US_HASH
+        // &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp EQUAL      &trans        &kp GRAVE  &kp RS(SEMICOLON)
+        // &trans  &trans  &trans  &trans  &trans    &kp UNDER  &kp PLUS       &trans        &trans     &kp SEMICOLON
+        //                         &trans  &trans    &trans     &trans
+        //             >;
+        //         };
 
         symbols {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH           &kp DOLLAR            &kp PERCENT               &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp TILDE  &kp NON_US_HASH
-&kp RS(NUBS)     &kp LESS_THAN      &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp MINUS  &kp EQUAL      &trans        &kp GRAVE  &kp RS(SEMICOLON)
-&kp NUBS         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE           &kp UNDER  &kp PLUS       &trans        &trans     &kp SEMICOLON
-                                                       &trans                &trans                    &trans     &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH           &kp DOLLAR            &kp PERCENT              &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp TILDE  &kp NON_US_HASH
+&kp RS(NUBS)     &kp LESS_THAN      &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp MINUS  &kp EQUAL      &trans        &kp GRAVE  &kp RS(SEMICOLON)
+&kp NUBS         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp UNDER  &kp PLUS       &trans        &trans     &kp SEMICOLON
+                                                       &trans                &trans                   &trans     &trans
             >;
         };
     };

@@ -55,7 +55,7 @@
             bindings = <
 &kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOLUME_UP    &trans       &trans  &trans  &trans  &trans
 &kp F11  &kp F4  &kp F5  &kp F6  &kp K_MUTE         &trans       &trans  &trans  &trans  &trans
-&kp F10  &kp F1  &kp F2  &kp F3  &kp C_VOL_DN       &bootloader  &trans  &trans  &trans  &trans
+&kp F10  &kp F1  &kp F2  &kp F3  &kp C_VOL_DN       &bootloader  &trans  &trans  &trans  &bt BT_CLR_ALL
                          &trans  &trans             &trans       &trans
             >;
         };
@@ -71,9 +71,9 @@
 
         left_mods {
             bindings = <
-&kp ESC   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&kp CAPS  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
+&kp ESC   &trans  &trans  &trans  &trans    &trans  &trans  &kp RIGHT_BRACKET  &trans     &trans
+&kp CAPS  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_BRACKET   &kp GRAVE  &trans
+&trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans             &trans     &trans
                           &trans  &trans    &trans  &trans
             >;
         };

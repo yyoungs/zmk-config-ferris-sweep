@@ -44,19 +44,19 @@
 
         nav_layer {
             bindings = <
-&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &trans              &kp PAGE_UP    &kp UP    &trans     &kp DELETE
-&trans     &trans     &trans     &trans     &trans           &kp RG(LEFT_ARROW)  &kp LEFT       &kp DOWN  &kp RIGHT  &kp RG(RIGHT_ARROW)
-&trans     &trans     &trans     &trans     &trans           &trans              &kp PAGE_DOWN  &trans    &trans     &trans
-                                 &trans     &trans           &trans              &trans
+&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &kp RG(LEFT_ARROW) &kp PAGE_UP    &trans    &trans     &kp DELETE
+&trans     &trans     &trans     &trans     &trans           &kp LEFT           &kp DOWN  &kp UP    &kp RIGHT  &kp RG(RIGHT_ARROW)
+&trans     &trans     &trans     &trans     &trans           &trans             &kp PAGE_DOWN  &trans    &trans     &trans
+                                 &trans     &trans           &trans             &trans
             >;
         };
 
         left_num {
             bindings = <
-&kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOLUME_UP    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp F11  &kp F4  &kp F5  &kp F6  &kp K_MUTE         &trans        &trans        &trans        &trans        &trans
-&kp F10  &kp F1  &kp F2  &kp F3  &kp C_VOL_DN       &bootloader   &trans        &trans        &trans        &bt BT_CLR_ALL
-                         &trans  &trans             &trans        &trans
+&kp F12  &kp F7  &kp F8  &kp F9  &trans   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp F11  &kp F4  &kp F5  &kp F6  &trans   &trans        &trans        &trans        &trans        &trans
+&kp F10  &kp F1  &kp F2  &kp F3  &trans   &bootloader   &trans        &trans        &trans        &bt BT_CLR_ALL
+                         &trans  &trans   &trans        &trans
             >;
         };
 
@@ -71,10 +71,10 @@
 
         left_mods {
             bindings = <
-&kp ESC   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans
-&kp CAPS  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp GRAVE  &trans
-&trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans
-                          &trans  &trans    &trans  &trans
+&kp ESC   &trans  &trans  &trans  &kp C_VOLUME_UP &trans  &trans  &trans  &trans     &trans
+&kp CAPS  &trans  &trans  &trans  &kp K_MUTE      &trans  &trans  &trans  &kp GRAVE  &trans
+&trans    &trans  &trans  &trans  &kp C_VOL_DN    &trans  &trans  &trans  &trans     &trans
+                          &trans  &trans          &trans  &trans
             >;
         };
 
